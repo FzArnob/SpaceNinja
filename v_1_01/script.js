@@ -8,7 +8,7 @@ class Game {
 
     this.timeline = new TimelineMax({ smoothChildTiming: true });
     this.time = 2; // initial speed
-    this.colors = ["#db2943", "#006b93", "#8260F6"]; // the 3 colors used in the game
+    this.colors = ["#E42334", "#009c46", "#0079c9"]; // the 3 colors used in the game
     this.colorsRGBA = ["rgba(219, 41, 67, 1)", "rgba(219, 41, 67, 1)", "rgba(219, 41, 67, 1)"];
     this.color = this.colors[0]; // the intial color of the ninja
     this.prevColor = null; // used as a holder to prevent ninja colors from repeating
@@ -347,7 +347,7 @@ for (var i = 0; i < el.length; i++) {
         } else {
 
           // you loose
-          game.stop();
+          // game.stop();
 
         }
 
@@ -375,7 +375,7 @@ class Stick {
 class Color {
 
   constructor() {
-    this.colors = ["#db2943", "#006b93", "#8260F6"];
+    this.colors = ["#E42334", "#009c46", "#0079c9"];
     this.effects = ["bubble", "triangle", "block"];
     this.prevEffect = null;
   }
@@ -387,7 +387,7 @@ class Color {
   }
 
   colorcodeToName(color) {
-    let colors = ["#db2943", "#006b93", "#8260F6"];
+    let colors = ["#E42334", "#009c46", "#0079c9"];
     let names = ["red", "yellow", "purple"];
     let index = colors.indexOf(color);
     if (index == -1) return false;

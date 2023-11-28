@@ -157,13 +157,13 @@
   transition: border-bottom-color 0.4s ease;
 }
 .red .triangle-2:after {
-  border-bottom-color: #fc5c82;
+  border-bottom-color: #E42334;
 }
-.yellow .triangle-2:after {
-  border-bottom-color: #fcd45c;
+.blue .triangle-2:after {
+  border-bottom-color: #0079c9;
 }
-.purple .triangle-2:after {
-  border-bottom-color: #9174f5;
+.green .triangle-2:after {
+  border-bottom-color: #009c46;
 }
 
 .triangle-3 {
@@ -186,13 +186,13 @@
   transition: border-bottom-color 0.4s ease;
 }
 .red .triangle-3:after {
-  border-bottom-color: #fc5c82;
+  border-bottom-color: #E42334;
 }
-.yellow .triangle-3:after {
-  border-bottom-color: #fcd45c;
+.blue .triangle-3:after {
+  border-bottom-color: #0079c9;
 }
-.purple .triangle-3:after {
-  border-bottom-color: #9174f5;
+.green .triangle-3:after {
+  border-bottom-color: #009c46;
 }
 
 .triangle-4 {
@@ -326,13 +326,13 @@
   transition: border-bottom-color 0.4s ease;
 }
 .red .triangle-14:after {
-  border-bottom-color: #fc5c82;
+  border-bottom-color: #E42334;
 }
-.yellow .triangle-14:after {
-  border-bottom-color: #fcd45c;
+.blue .triangle-14:after {
+  border-bottom-color: #0079c9;
 }
-.purple .triangle-14:after {
-  border-bottom-color: #9174f5;
+.green .triangle-14:after {
+  border-bottom-color: #009c46;
 }
 
 .stick .block {
@@ -532,7 +532,7 @@ a:focus, a:active {
 .wave1 {
   background: url(img/wave1.svg) repeat-x;
   height: 150px;
-  background-color: #b9a5b8;
+  background-color: #b99bb7;
   transition: all 0.8s;
   bottom: 0;
   z-index: 23;
@@ -552,7 +552,7 @@ a:focus, a:active {
   height: 180px;
   transition: all 0.4s;
   bottom: 90px;
-  background-color: #b695b3;
+  background-color: #b99bb7;
   z-index: 21;
 }
 
@@ -560,7 +560,7 @@ a:focus, a:active {
   background: url(img/wave4.svg) repeat-x;
   height: 180px;
   bottom: 120px;
-  background-color: #aa83a6;
+  background-color: #b99bb7;
   transition: all 0.4s;
   z-index: 20;
 }
@@ -661,19 +661,19 @@ a:focus, a:active {
 }
 
 .stick.red {
-  background-color: #db2943;
+  background-color: #E42334;
 }
 
-.stick.yellow {
-  background-color: #006b93;
+.stick.blue {
+  background-color: #0079c9;
 }
 
-.stick.purple {
-  background-color: #8260F6;
+.stick.green {
+  background-color: #009c46;
 }
 
 .stick.inactive {
-  background-color: rgb(208, 167, 255);
+  background-color: rgba(205, 184, 230, 0.8);
 }
 
 .ninja, .ninja-demo {
@@ -684,12 +684,12 @@ a:focus, a:active {
 }
 
 #ninja-g{
-  background-color: #db2943;
+  background-color: #E42334;
   transition: background-color 0.05s ease;
 }
 
 #ninja-d{
-  background-color: #db2943;
+  background-color: #E42334;
   transition: background-color 0.05s ease;
 }
 
@@ -741,7 +741,7 @@ a:focus, a:active {
   width: 600px;
   height: 170px;
   background-color: rgba(78,78,78, 0.7);
-  border: 4px solid #db2943;
+  border: 4px solid #E42334;
   border-radius: 68px;
   text-align: center;
   margin-top: -10%;
@@ -762,7 +762,7 @@ a:focus, a:active {
 }
 .start-game .logo-holder .play-button {
   display: inline-block;
-  background-color: #db2943;
+  background-color: #E42334;
   border: 4px solid #fff;
   border-radius: 100px;
   color: #fff;
@@ -783,7 +783,7 @@ a:focus, a:active {
   font-size: 20px;
 }
 .start-game .logo-holder .hint span {
-  color: #db2943;
+  color: #E42334;
 }
 .start-game .how-to-play {
   display: flex;
@@ -816,15 +816,15 @@ a:focus, a:active {
 }
 .start-game .how-to-play .bar.bar-1 {
   height: 180px;
-  background: #db2943;
+  background: #E42334;
 }
 .start-game .how-to-play .bar.bar-2 {
   height: 120px;
-  background: #006b93;
+  background: #009c46;
 }
 .start-game .how-to-play .bar.bar-3 {
   height: 150px;
-  background: #4e4e4e;
+  background: #0079c9;
 }
 .start-game .how-to-play .section-2 .bar {
   cursor: url(img/cursor.svg), pointer;
@@ -856,14 +856,14 @@ a:focus, a:active {
   font-size: 64px;
 }
 .stop-game .score-container .final-score {
-  color: #FFE345;
+  color: #0079c9;
   font-weight: 900;
   font-size: 130px;
   letter-spacing: -6px;
   line-height: 110px;
 }
 .stop-game .score-container .result {
-  color: #db2943;
+  color: #E42334;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 30px;
@@ -893,7 +893,7 @@ a:focus, a:active {
   position: relative;
 }
 .stop-game .score-container .play-again {
-  background-color: #db2943;
+  background-color: #E42334;
   border: 2px solid #fff;
   color: #fff;
   text-decoration: none;
@@ -949,7 +949,7 @@ a:focus, a:active {
   position: fixed;
   right: 54px;
   top: 20px;
-  color: #33485F;
+  color: #bfa0ff;
   font-size: 90px;
   font-weight: 900;
   letter-spacing: -0.1em;
@@ -1000,8 +1000,8 @@ a:focus, a:active {
   height: 3px;
   border-radius: 50%;
   position: relative;
-  background-color: rgba(237, 205, 163, 0.8);
-  box-shadow: 0 0 40px 0 rgba(237, 205, 163, 0.8), 0 0 20px 0 #FFFFFF;
+  background-color: rgba(107, 250, 255, 0.8);
+  box-shadow: 0 0 40px 0 rgba(107, 250, 255, 0.8), 0 0 20px 0 #FFFFFF;
   animation: glow 5s infinite;
 }
 .star--medium {
@@ -1011,14 +1011,14 @@ a:focus, a:active {
 .star--big {
   width: 9px;
   height: 9px;
-  box-shadow: 0 0 40px 0 #EDCDA3, 0 0 20px 0 #FFFFFF, inset 0 0 4px #FFFFFF;
+  box-shadow: 0 0 40px 0 rgb(107, 250, 255), 0 0 20px 0 #FFFFFF, inset 0 0 4px #FFFFFF;
 }
 
 .comet {
   width: 6px;
   height: 6px;
   background-color: rgba(0, 238, 255, 0.9);
-  box-shadow: 0 0 40px 0 #EDCDA3, 0 0 20px 0 #FFFFFF, inset 0 0 8px rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 40px 0 rgb(107, 250, 255), 0 0 20px 0 #FFFFFF, inset 0 0 8px rgba(255, 255, 255, 0.6);
   top: 0;
   left: 80%;
   opacity: 0.3;
@@ -1031,7 +1031,7 @@ a:focus, a:active {
   height: 6px;
   border-radius: 50%;
   background-color: rgba(0, 238, 255, 0.3);
-  box-shadow: 0 0 20px rgba(237, 205, 163, 0.4);
+  box-shadow: 0 0 20px rgba(107, 250, 255, 0.4);
   position: absolute;
   top: 0;
   left: 0;
@@ -1041,7 +1041,7 @@ a:focus, a:active {
   width: 9px;
   height: 9px;
   background-color: rgba(0, 238, 255, 0.9);
-  box-shadow: 0 0 40px 0 #EDCDA3, 0 0 20px 0 #FFFFFF, inset 0 0 8px rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 40px 0 rgb(107, 250, 255), 0 0 20px 0 #FFFFFF, inset 0 0 8px rgba(255, 255, 255, 0.6);
   top: 0;
   left: 40%;
   opacity: 0.3;
@@ -1054,7 +1054,7 @@ a:focus, a:active {
   height: 6px;
   border-radius: 50%;
   background-color: rgba(0, 238, 255, 0.3);
-  box-shadow: 0 0 20px rgba(237, 205, 163, 0.4);
+  box-shadow: 0 0 20px rgba(107, 250, 255, 0.4);
   position: absolute;
   top: 0;
   left: 0;
