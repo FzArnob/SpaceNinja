@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Space Ninja</title>
+<meta name="description" content="A game made by Fz Arnob">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,700,900'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<div class="splash"></div>
+<div class="container">
+
+            <div class="start-game game-full-flex" id="start-game">
+                
+                <div class="start-game-top"><a class="play-full-page" href="https://codepen.io/gregh/full/yVLOyO/"  target="_blank">Full Page Mode</a></div>    
+
+                <div class="logo-holder">
+                    <p class="logo">
+                        <span>S</span>
+                        <span>P</span>
+                        <span>A</span>
+                        <span>C</span>
+                        <span>E</span>
+                        <span style="margin-left: 25px;"></span>
+                        <span>N</span>
+                        <span>I</span>
+                        <span>N</span>
+                        <span>J</span>
+                        <span>A</span>
+                    </p>
+                    <a class="play-button" href="#" onclick="game.start()">Play</a>
+                    <h4 class="hint">hint: <span>red</span> color always comes first</h4>
+                </div>
+
+                <div class="how-to-play">
+                    <div class="section section-1">
+                        <h4 style="background: rgba(78,78,78, 0.7); padding-bottom: 10px; border-bottom: 5px solid #db2943; padding-top: 10px; border-top: 5px solid #db2943;">Ninja<br>can shift colors while jumpnig.</h4>
+                        <div class="content">
+                            <div class="ninja-demo" id="ninja-demo">
+                                <div id="ninja-d" style="width: 39px; height: 39px; position: absolute; border-radius: 50%; left: 14.3px;"></div>
+                                <div id="ninja-d" style="width: 24.5px; height: 24px; position: absolute;  border-radius: 50%; left: 19.5px; top: 30.5px;"></div>
+                                <div id="ninja-d" style="width: 8px; height: 8px; position: absolute;  border-radius: 50%; left: 9px; top: 10px;"></div>
+                                <div id="ninja-d" style="width: 6px; height: 6px; position: absolute;  border-radius: 50%; left: 10px; top: 18px;"></div>
+                                <div id="ninja-d" style="width: 10px; height: 18px; position: absolute;  border-radius: 50%; left: 17px; top: 45.5px; transform: rotate(52deg);"></div>
+                                <div id="ninja-d" style="width: 12px; height: 18px; position: absolute; border-radius: 50%; left: 37.5px; top: 44.5px; transform: rotate(-20deg);"></div>
+                                <div style="background: url('img/n-stand.svg') right bottom; position: absolute; background-size: 64px 64px;width: 64px;height: 64px;z-index: 2;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section section-2">
+                        <h4 style="background: rgba(78,78,78, 0.7); padding-bottom: 10px; border-bottom: 5px solid #db2943; padding-top: 10px; border-top: 5px solid #db2943;">Tap on the bar to switch the colors<br>(Red, Yellow, Purple)</h4>
+                        <div class="content">
+                            <div class="bar bar-1" data-index="0"></div>
+                            <div class="bar bar-2"></div>
+                            <div class="bar bar-3"></div>
+                        </div>
+                    </div>
+                    <div class="section section-3">
+                        <h4 style="background: rgba(78,78,78, 0.7); padding-bottom: 10px; border-bottom: 5px solid #db2943; padding-top: 10px; border-top: 5px solid #db2943;">Always match<br> bar color with Ninja</h4>
+                        <div class="content">
+                            <div class="ninja-demo" id="ninja-demo">
+                                <div id="ninja-d" style="width: 39px; height: 39px; position: absolute; border-radius: 50%; left: 14.3px;"></div>
+                                <div id="ninja-d" style="width: 24.5px; height: 24px; position: absolute;  border-radius: 50%; left: 19.5px; top: 30.5px;"></div>
+                                <div id="ninja-d" style="width: 8px; height: 8px; position: absolute;  border-radius: 50%; left: 9px; top: 10px;"></div>
+                                <div id="ninja-d" style="width: 6px; height: 6px; position: absolute;  border-radius: 50%; left: 10px; top: 18px;"></div>
+                                <div id="ninja-d" style="width: 10px; height: 18px; position: absolute;  border-radius: 50%; left: 17px; top: 45.5px; transform: rotate(52deg);"></div>
+                                <div id="ninja-d" style="width: 12px; height: 18px; position: absolute; border-radius: 50%; left: 37.5px; top: 44.5px; transform: rotate(-20deg);"></div>
+                                <div style="background: url('img/n-stand.svg') right bottom; position: absolute; background-size: 64px 64px;width: 64px;height: 64px;z-index: 2;"></div>
+                            </div>
+                            <div class="bar bar-1" id="ninja-d"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="stop-game game-full-flex">
+
+                <div class="score-container">
+
+                    <h1>SPACE NINJA</h1>
+
+                    <div class="final-score"></div>
+                    <div class="result"></div>
+
+                    <h4>Tweet to challenge friends</h4>
+
+                    <p>
+                        <a class="tweet" href="#" onclick="game.generateTweet()">
+                            <i class="fa fa-twitter" aria-hidden="true"></i> Tweet
+                        </a>
+                    </p>
+
+                    <div>
+                        <a class="play-again" href="#" onclick="game.start()">Play Again</a>
+                        <a class="main-menu" href="#" onclick="game.intro()">Menu</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="small-glows">
+            </div>
+
+            <div class="glow">
+                <img alt="sun" class="sun" src="img/sun.svg" />
+            </div>
+            <img alt="earth" class="earth" src="img/earth.svg" />
+            <div class="waves">
+                <div class="top_wave"></div>
+                <div class="wave1"></div>
+                <div class="wave2"></div>
+                <div class="wave3"></div>
+                <div class="wave4"></div>
+            </div>
+
+            <div class="mounts">
+                <div class="mount1"></div>
+                <div class="mount2"></div>
+            </div>
+
+            <div class="wind"></div>
+
+            <div class="scene">
+                <div class="learn-to-play">Tap on the bars to change the color!</div>
+                <div class="score" id="score"></div>
+                <div class="ninja-holder"></div>
+                <div class="sticks" id="sticks"></div>
+            </div>
+
+            <div class="noise"></div>
+
+        </div>
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-3.1.1.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script><script  src="./script.js"></script>
+
+
+
+</body>
+</html>
