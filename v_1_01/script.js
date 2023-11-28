@@ -347,7 +347,7 @@ for (var i = 0; i < el.length; i++) {
         } else {
 
           // you loose
-          // game.stop();
+          game.stop();
 
         }
 
